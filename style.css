@@ -1,0 +1,47 @@
+body {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	margin: 0;
+}
+
+header {
+	display: block;
+	width: 100%;
+	height: 80px;
+	margin: 0;
+	margin-bottom: 100px;
+	text-align: center;
+	background-color: gainsboro;
+}
+
+header > h1 {
+	margin: 0;
+	font-size: 4em;
+}
+#button-container {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+}
+
+#button-container > button {
+	display: block;
+	width: 160px;
+	height: 100px;
+	box-shadow: 0 3px 2px rgb(153, 153, 153);
+	border: rgb(153, 153, 153);
+	text-align: center;
+}
+
+#options-container {
+	display: flex;
+	justify-content: center;
+}
+
+#options-container > select, button {
+	display: block;
+	width: 100px;
+	height: 30px;
+	margin: 20px;
+	box-shadow:0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
