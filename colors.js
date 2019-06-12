@@ -24,10 +24,10 @@ var colors = [
 	'chocolate',
 	'honeydew',
 	'slategray'
-]
+];
 
 var initColors = [
 	'crimson',
 	'gold',
 	'deepskyblue'
-]
+];
