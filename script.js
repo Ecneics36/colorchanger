@@ -1,6 +1,7 @@
 var btnContainer = document.getElementById('button-container');
 var btnAdder = document.getElementById('adder');
 var btnRemover = document.getElementById('remover');
+var btnBonanza = document.getElementById('bonanza');
 var colorSelect = document.getElementById('colors');
 
 function createBtn(parentElement, color){
@@ -75,6 +76,18 @@ btnRemover.addEventListener('click', function(event) {
 	console.log(document.body.style.backgroundColor);
 	document.body.style.backgroundColor = 'white';
 });
+
+// ADD COLOR VALUE AS A BUTTON (AND REMOVE SELECT OPTION)
+btnBonanza.addEventListener('click', function(event) {
+	document.body.style.backgroundColor = 'white';
+	for(var i = 0; i < colors.length; i++) {
+		createBtn(btnContainer, colors[i]);
+		// delete option
+		document.querySelector('#colors option[value=' + colors[i] + ']').remove()
+	}
+	console.log(event);
+});
+
 // function listenToAll(selector, eventType, listener){
 // 	var elements = document.querySelectorAll(selector);
 // 	for(var i = 0; i < elements.length; i++){

@@ -1,14 +1,10 @@
 var colors = [
-	'no color selected',
-	'deepskyblue', 
-	'gold', 
 	'purple',
 	'orange', 
 	'black',
 	'green',
 	'deeppink', 
 	'salmon',
-	'crimson',
 	'orangered',
 	'moccasin',
 	'fuchsia',
@@ -22,7 +18,7 @@ var colors = [
 	'steelblue',
 	'cornflowerblue',
 	'chocolate',
-	'honeydew',
+	'darkkhaki',
 	'slategray'
 ];
 
