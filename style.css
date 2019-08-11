@@ -46,16 +46,18 @@ header > h1 {
   display: grid;
   grid-template-areas:
     'instr instr instr instr'
-    'select every adder remove';
+    'select adder remover every';
+  grid-template-columns: 1fr 200px 200px 1fr;
+  grid-gap: 5px;
   background-color: gainsboro;
 }
 
-#options-container > select,
-#options-container > button {
+button,
+select {
   display: block;
   width: 200px;
   height: 40px;
-  margin: 20px;
+  margin: 0;
   background-color: white;
   font-size: 1.25em;
   box-shadow: 0 1px 1px 0 #c7c7c7 inset;
@@ -65,10 +67,12 @@ header > h1 {
   grid-area: instr;
   display: flex;
   justify-content: center;
+  margin-top: 30px;
 }
 
 #colors {
   grid-area: select;
+  margin: 0 0 0 auto;
 }
 
 #bonanza {
@@ -80,5 +84,5 @@ header > h1 {
 }
 
 #remover {
-  grid-area: remove;
+  grid-area: remover;
 }
